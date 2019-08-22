@@ -53,8 +53,6 @@ canal-python  是 Canal 的 python 客户端，它与 Canal 是采用的Socket�
 
 6.Canal记录消费位置。
 
-![架构图](assets/architecture.png)
-
 ## 五.快速启动
 
 ### 安装Canal
@@ -132,8 +130,5 @@ while True:
 client.disconnect()
 ````
 
-![运行效果图](assets/effect.gif)
-
-
-更多详情请查看 [Sample](https://github.com/xingwenge/canal-php/blob/master/src/sample/client.php)
+更多详情请查看 [Sample](https://github.com/haozi3156666/canal-python/blob/master/example.py)
 
