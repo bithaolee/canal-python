@@ -66,11 +66,6 @@ python >= 3
 
 ````shell
 pip install canal-python
-
-or
-
-$ git clone https://github.com/haozi3156666/canal-python.git
-$ cd canal-python
 ````
 
 ### 建立与Canal的连接
