@@ -2,9 +2,9 @@
 
 import time
 
-from client import Client
-from protocol import EntryProtocol_pb2
-from protocol import CanalProtocol_pb2
+from .client import Client
+from .protocol import EntryProtocol_pb2
+from .protocol import CanalProtocol_pb2
 
 client = Client()
 client.connect(host='172.12.0.13')

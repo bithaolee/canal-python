@@ -77,9 +77,9 @@ $ cd canal-python
 ````python
 import time
 
-from canal-python.client import Client
-from canal-python.protocol import EntryProtocol_pb2
-from canal-python.protocol import CanalProtocol_pb2
+from canal.client import Client
+from canal.protocol import EntryProtocol_pb2
+from canal.protocol import CanalProtocol_pb2
 
 client = Client()
 client.connect(host='127.0.0.1', port=11111)

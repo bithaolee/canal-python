@@ -2,9 +2,9 @@
 
 import time
 import struct
-from connector import Connector
-from protocol import CanalProtocol_pb2
-from protocol import EntryProtocol_pb2
+from .connector import Connector
+from .protocol import CanalProtocol_pb2
+from .protocol import EntryProtocol_pb2
 
 class Client(object):
 

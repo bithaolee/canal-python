@@ -4,7 +4,7 @@ from setuptools  import setup
 
 setup(
     name= 'canal-python',
-    version= '0.1',
+    version= '0.3',
     packages = ['canal'],
     author='haoyue',
     author_email='haolee1990@qq.com',
