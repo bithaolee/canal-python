@@ -28,15 +28,15 @@ while True:
         for row in row_change.rowDatas:
             format_data = dict()
             if event_type == EntryProtocol_pb2.EventType.DELETE:
-                for column in row.beforeColumns:
-                    format_data = {
-                        column.name: column.value
-                    }
+                format_data = {
+                    column.name: column.value
+                    for column in row.beforeColumns
+                }
             elif event_type == EntryProtocol_pb2.EventType.INSERT:
-                for column in row.afterColumns:
-                    format_data = {
-                        column.name: column.value
-                    }
+                format_data = {
+                    column.name: column.value
+                    for column in row.afterColumns
+                }
             else:
                 format_data['before'] = format_data['after'] = dict()
                 for column in row.beforeColumns:
