@@ -180,7 +180,8 @@ if __name__ == "__main__":
                             column.name: column.value
                         }
                 else:
-                    format_data['before'] = format_data['after'] = dict()
+                    format_data['before'] = dict()
+                    format_data['after'] = dict()
                     for column in row.beforeColumns:
                         format_data['before'][column.name] = column.value
                     for column in row.afterColumns:
