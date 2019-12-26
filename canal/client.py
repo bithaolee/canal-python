@@ -171,14 +171,10 @@ if __name__ == "__main__":
                 format_data = dict()
                 if event_type == EntryProtocol_pb2.EventType.DELETE:
                     for column in row.beforeColumns:
-                        format_data = {
-                            column.name: column.value
-                        }
+                        format_data[column.name] = column.value
                 elif event_type == EntryProtocol_pb2.EventType.INSERT:
                     for column in row.afterColumns:
-                        format_data = {
-                            column.name: column.value
-                        }
+                        format_data[column.name] = column.value
                 else:
                     format_data['before'] = dict()
                     format_data['after'] = dict()
