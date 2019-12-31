@@ -66,6 +66,7 @@ python >= 3
 
 ````shell
 pip install canal-python
+pip install protobuf
 ````
 
 ### 建立与Canal的连接
@@ -125,5 +126,5 @@ while True:
 client.disconnect()
 ````
 
-更多详情请查看 [Sample](https://github.com/haozi3156666/canal-python/blob/master/example.py)
+更多详情请查看 [Sample](https://github.com/haozi3156666/canal-python/blob/master/canal/example.py)
 
