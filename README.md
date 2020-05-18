@@ -125,5 +125,5 @@ while True:
 client.disconnect()
 ````
 
-更多详情请查看 [Sample](https://github.com/haozi3156666/canal-python/blob/master/example.py)
+更多详情请查看 [Sample](https://github.com/haozi3156666/canal-python/blob/master/canal/example.py)
 
