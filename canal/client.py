@@ -113,7 +113,7 @@ class Client(object):
                     entry.MergeFromString(item)
                     message['entries'].append(entry)
         elif packet.type == CanalProtocol_pb2.PacketType.ACK:
-            ack = CanalProtocol_pb2.PacketType.Ack()
+            ack = CanalProtocol_pb2.Ack()
             ack.MergeFromString(packet.body)
             if ack.error_code > 0:
                 raise Exception('get data error. error code:%s, error message:%s' % (ack.error_code, ack.error_message))
